@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <!-- Ajoutez cette ligne pour désactiver l'inclusion implicite des fichiers de compilation -->
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspose.PDF" Version="24.4.0" />
+    <PackageReference Include="itext7" Version="7.1.15" />
+    <PackageReference Include="Microsoft.DotNet.PlatformAbstractions" Version="1.1.0" />
+    <PackageReference Include="ZXing.Net" Version="0.16.4" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Ajoutez les fichiers pour la compilation -->
+    <Compile Include="Program.cs" />
+    <Compile Include="iTextProcessor.cs" />
+    <Compile Include="AsposeProcessor.cs" />
+  </ItemGroup>
+
+</Project>
